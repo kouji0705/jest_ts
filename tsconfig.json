@@ -4,5 +4,11 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": ".", // プロジェクトのルートディレクトリを基準にする
+    "paths": {
+      "@/*": ["src/*"] // '@' で 'src/' ディレクトリを参照できるように設定
+    },
+  },
 }
