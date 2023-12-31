@@ -15,6 +15,7 @@ describe('fetchData', () => {
   });
 
   it('fetches erroneously data from an API', async () => {
+    // mockを準備
     const errorMessage = 'Network Error';
     (axios.get as jest.Mock).mockRejectedValue(new Error(errorMessage));
 
