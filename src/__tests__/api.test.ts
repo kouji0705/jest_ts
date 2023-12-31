@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { fetchData } from '@/api';
-import { AxiosResponse } from 'axios';
 
 // axios.get を手動でモックに設定
 axios.get = jest.fn();
